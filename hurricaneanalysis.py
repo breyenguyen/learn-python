@@ -48,7 +48,7 @@ hurricane_dictionary = create_hurricane_dict(names, months, years, max_sustained
 #print(hurricane_dictionary)
 
 # write your construct hurricane by year dictionary function here:
-# here i forgot that we've created a dictionary already so I repeated the same thing over again
+# here i forgot that I've created a dictionary already so I repeated the same thing over again
 def create_hurricane_dict_year(names, months, years, winds, areas_affected, damages, deaths):
     hurricane_dict_by_year = {}
     for i in range(len(years)):
