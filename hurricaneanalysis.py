@@ -101,13 +101,6 @@ print(deadliest_hurricane(hurricane_dictionary))
 
 # write your catgeorize by mortality function here:
 def dict_by_mortality(hurricane_dict):
-    mortality_scale = {
-        0:0,
-        1:100,
-        2:500,
-        3:1000,
-        4:10000
-    }
     hurricane_by_mortality = {0:[],1:[],2:[],3:[],4:[],5:[]}
     for value in hurricane_dict.values():
         if value.get('Deaths') > 10000:
@@ -141,13 +134,6 @@ print(costliest_hurricane(hurricane_dictionary))
 
 # write your catgeorize by damage function here:
 def dict_by_damage(hurricane_dict):
-    damage_scale = {
-        0: 0,
-        1: 100000000,
-        2: 1000000000,
-        3: 10000000000,
-        4: 50000000000
-    }
     hurricane_by_damage = {0:[],1:[],2:[],3:[],4:[],5:[]}
     for value in hurricane_dict.values():
         if value.get('Damages') != 'Damages not recorded':
